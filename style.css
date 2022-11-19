@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Staatliches&display=swap');
+/* Name: Brooke Bobbitt
+Date: 11/16/22
+Assignment: Flex Travel Page */
+
+/* browser reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* nav */
+nav {
+    position: fixed;
+    top: 0px;
+    right:0px;
+    left:0px;
+    z-index: 30;
+}
+
+.flex-container1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(225, 223, 217);
+    font-variant: small-caps;
+    font-size: 2rem;
+    flex-flow: wrap;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: .45rem;
+    padding: 1em;
+    color: #060472;
+}
+
+a:hover {
+    color: #9f9eec;
+}
+
+
+/* image at top*/
+.img {
+    margin-top: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    font-size: 4em;
+    font-variant: small-caps;
+    color: #060472;
+}
+
+.center2 {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5rem;
+    ;
+    color: #060472;
+}
+
+/* smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+#section1,
+#section2,
+#section3, .section4{
+    height:auto;
+}
+
+
+
+/* Tours section*/
+/*Names of categories */
+
+h1 {
+    text-align: center;
+    background-color: rgb(225, 223, 217);
+    color: #060472;
+    padding-top:10px;
+    margin-top:10px;
+}
+
+/* description under */
+.description {
+    text-align: center;
+    background-color: rgb(225, 223, 217);
+    font-size: 1rem;
+    color: #9f9eec;
+    padding-bottom:10px;
+}
+
+/* tour flex */
+.pics {
+    display: flex;
+    flex-flow: wrap;
+}
+
+/* tour pictures */
+.pic1 {
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 400px;
+    background: url(img/road.jpg);
+}
+
+.pic2 {
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 400px;
+    background: url(img/icy.jpg);
+}
+
+.pic3 {
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 400px;
+    background: url(img/green.jpg);
+}
+
+.pic4 {
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 400px;
+    background: url(img/light.jpg);
+}
+
+/* title of tour */
+.name {
+    font-size: 2rem;
+    color: #060472;
+    margin: 70% 0px 0px 10px;
+}
+
+/* highlight thing behind words */
+span {
+    background-color: #c1c1f6bb;
+    opacity: 0.8;
+}
+
+/* description of tour*/
+.about {
+    color: #060472;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* season pictures*/
+
+.summer{
+    
+    background: url(img/summer.jpg);
+    flex: 1 0 21%;
+    margin: 5px;
+}
+.winter{
+    
+    background: url(img/winter.jfif);
+    flex: 1 0 21%;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+.fall{
+    
+    background: url(img/fall.jpg);
+    flex: 1 0 21%;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+/* travel advice */
+.container2{
+    display:grid;
+    grid-gap:20px;
+    grid-template-areas:
+    'top1 top2'
+    'bottom1 bottom2';
+}
+
+.box{
+    background-color:rgb(248, 243, 243);
+    display:grid;
+    justify-content:right;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);;
+    padding:30px;
+}
+.top-box-a{
+    grid-area:top1;
+    margin: 10px 0px 0px 10px;
+}
+.top-box-b{
+    grid-area:top2;
+    margin: 10px 10px 0px 0px;
+}
+.top-box-c{
+    grid-area:bottom1;
+    margin: 0px 0px 0px 10px;
+}
+.top-box-d{
+    grid-area:bottom2;
+    margin: 0px 10px 0px 0px;
+}
+h4{
+    font-size: 1.5rem;
+    color: #060472;
+}
+.advice{
+    color: #9290e5;
+}
+.small1{
+    border-radius: 100%;
+    width:100px;
+    position:absolute;
+    left:40px;
+    padding-top:15px;
+}
+.small2{
+    border-radius: 100%;
+    width:100px;
+    position:absolute;
+    left:800px;
+    padding-top:15px;
+}
+.small3{
+    border-radius: 100%;
+    width:100px;
+    position:absolute;
+    top:1840px;
+    left:40px;
+}
+.small4{
+    border-radius: 100%;
+    width:100px;
+    position:absolute;
+    top:1840px;
+    left:800px;
+
+}
+/* contact form*/
+
+  .contact {
+    float:left;
+    margin:10px 0px 50px 0px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(248, 243, 243);
+    color:#060472;
+    font-size: 1rem;
+   
+  }
+  .word{
+    font-size: 2rem;
+    color: #060472;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 25px;
+  }
+  
+  input {
+    width: 75%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 2%;
+    box-shadow: 5px 5px 5px black;
+  }
+  
+  input[type="submit"] {
+    width: 15%;
+    background: white;
+    margin-bottom: 20px;
+  }
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(225, 223, 217);
+    font-size: 1em;
+    text-align: center;
+    z-index: 20;
+    color:#060472
+  }
+  
+  .fa-brands {
+    color: #4BA3C3;
+  }
+  
+  .fa-solid {
+    color: #4BA3C3;
+  }
+
+
+/*  media queries  */
+@media screen and (max-width: 1525px) {
+    .small1, .small2, .small3, .small4{
+        display:none;
+    }
+}
+@media screen and (max-width: 1120px) {
+   
+    .center {
+        font-size: 2em;
+    }
+
+    .center2 {
+        font-size: 1rem;
+
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .logo {
+        display: none;
+    }
+    .flex-container1{
+        font-size: 1.5rem;
+
+    }
+
+    .center {
+        font-size: 2em;
+        color: white;
+        top: 5%;
+    }
+
+    .center2 {
+        font-size: 1rem;
+        ;
+        color: rgb(250, 245, 245);
+    }
+}
